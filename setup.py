@@ -5,7 +5,7 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="ai4free",
-    version="0.3", 
+    version="0.4", 
     description="collection of free AI provides",
     long_description=README,
     long_description_content_type="text/markdown",

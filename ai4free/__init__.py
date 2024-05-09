@@ -9,3 +9,4 @@ from ai4free.Blackbox import *
 from ai4free.Phind import *
 from ai4free.yep import *
 from ai4free.you import *
+from ai4free.perplexity import *
