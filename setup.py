@@ -4,13 +4,13 @@ with open("README.md", encoding="utf-8") as f:
     README = f.read()
 
 setup(
-    name="webscout",
+    name="ai4free",
     version="0.1", 
     description="collection of free AI provides",
     long_description=README,
     long_description_content_type="text/markdown",
-    author="Devs Do Code",
-    author_email="devsdocode@gmail.com",
+    author="OEvortex",
+    author_email="helpingai5@gmail.com",
     packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -37,6 +37,6 @@ setup(
         'Documentation': 'https://github.com/OE-LUCIFER/Webscout/wiki',
         'Source': 'https://github.com/OE-LUCIFER/Webscout',
         'Tracker': 'https://github.com/OE-LUCIFER/Webscout/issues',
-        'YouTube': 'https://youtube.com/@devsdocode',
+        'YouTube': 'https://youtube.com/@OEvortex',
     },
 )
