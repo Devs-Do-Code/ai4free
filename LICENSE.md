@@ -1,5 +1,5 @@
 ****************************************
-**** Ai4Free Simplified Universal License ****
+# Ai4Free Simplified Universal License 
 ****************************************
 
 Version 1.0
