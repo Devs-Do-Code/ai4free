@@ -9,9 +9,8 @@ setup(
     description="collection of free AI provides",
     long_description=README,
     long_description_content_type="text/markdown",
-    author="OEvortex",
-    author="Sree",
-    author_email="helpingai5@gmail.com",
+    author="OEvortex, Sree",  # List both authors here
+    author_email="helpingai5@gmail.com",  # Specify the email for the first author
     packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
