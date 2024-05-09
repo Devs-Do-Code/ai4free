@@ -28,7 +28,7 @@
 
 AI4Free is a Python library that provides convenient access to a variety of large language models (LLMs) from different providers, all without requiring any API keys or fees. This allows developers and researchers to experiment with various LLMs and explore their capabilities without the barrier of cost.
 
-## Crafted with ❤️ by Devs Do Code (Sree)
+## Crafted with ❤️ by Devs Do Code (Sree) and OEvortex
 
 > **Disclaimer:** This project is not officially associated with Any Offical APIs. It is an independent reverse engineering effort to explore the All Available APIs.
 
