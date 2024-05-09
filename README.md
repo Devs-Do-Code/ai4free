@@ -52,38 +52,164 @@ pip install ai4free
 ## Usage
 The basic usage pattern involves creating an instance of the desired LLM provider and then using the `chat()` method to interact with the model.
 
-### Example with YouChat:
+## Example Usage of Available Providers (Synchronous)
+
+Here's how to use each of the available providers in AI4Free without asynchronous functions:
+
+## LEO
+```python
+from ai4free import LEO
+
+leo = LEO()
+
+while True:
+    prompt = input("You: ")
+    response = leo.chat(prompt)
+    print(f"LEO: {response}")
+```
+
+
+## KoboldAI
+```python
+from ai4free import KOBOLDAI
+
+koboldai = KOBOLDAI()
+
+while True:
+    prompt = input("You: ")
+    response = koboldai.chat(prompt)
+    print(f"KoboldAI: {response}")
+```
+
+
+## Blackbox
+```python
+from ai4free import BLACKBOXAI
+
+ai = BLACKBOXAI(
+    is_conversation=True,
+    max_tokens=800,
+    timeout=30,
+    intro=None,
+    filepath=None,
+    update_file=True,
+    proxies={},
+    history_offset=10250,
+    act=None,
+    model=None # You can specify a model if needed
+)
+
+# Start an infinite loop for continuous interaction
+while True:
+    # Define a prompt to send to the AI
+    prompt = input("Enter your prompt: ")
+    
+    # Check if the user wants to exit the loop
+    if prompt.lower() == "exit":
+        break
+    
+    # Use the 'chat' method to send the prompt and receive a response
+    r = ai.chat(prompt)
+    print(r)
+```
+
+
+## Phind
+```python
+from ai4free import PhindSearch
+
+# Create an instance of the PHIND class
+ph = PhindSearch()
+
+# Define a prompt to send to the AI
+prompt = "write a essay on phind"
+
+response = ph.chat(prompt)
+print(response)
+```
+
+
+## Yep
+```python
+from ai4free import YEPCHAT
+
+# Instantiate the YEPCHAT class with default parameters
+YEPCHAT = YEPCHAT()
+
+# Define a prompt to send to the AI
+prompt = "What is the capital of France?"
+
+# Use the 'chat' method to get a response from the AI
+r = YEPCHAT.chat(prompt)
+print(r)
+```
+
+
+## YouChat
 ```python
 from ai4free import YouChat
 
-# Create a YouChat instance
-youchat = YouChat()
+ai = YouChat(
+    is_conversation=True,
+    max_tokens=800,
+    timeout=30,
+    intro=None,
+    filepath=None,
+    update_file=True,
+    proxies={},
+    history_offset=10250,
+    act=None,
+)
 
-# Chat with YouChat
+prompt = "what is meaning of life"
+
+response = ai.ask(prompt)
+
+# Extract and print the message from the response
+message = ai.get_message(response)
+print(message)
+```
+
+## Cohere
+```python
+from ai4free import Cohere
+
+# Replace 'YOUR_API_KEY' with your Cohere API key
+cohere = Cohere(api_key='YOUR_API_KEY')
+
 while True:
     prompt = input("You: ")
-    response = youchat.chat(prompt)
-    print(f"YouChat: {response}")
+    response = cohere.chat(prompt)
+    print(f"Cohere: {response}")
 ```
-**Use code with caution.**
 
-### Example with Async OpenAI:
+
+## REKA
 ```python
-import asyncio
-from ai4free import AsyncOPENAI
+from ai4free import REKA
 
-async def main():
-    # Replace 'YOUR_API_KEY' with your OpenAI API key
-    openai = AsyncOPENAI(api_key='YOUR_API_KEY')
+# Replace 'YOUR_API_KEY' with your REKA API key
+reka = REKA(api_key='YOUR_API_KEY')
 
-    while True:
-        prompt = input("You: ")
-        response = await openai.chat(prompt)
-        print(f"OpenAI: {response}")
-
-asyncio.run(main())
+while True:
+    prompt = input("You: ")
+    response = reka.chat(prompt)
+    print(f"REKA: {response}")
 ```
-**Use code with caution.**
+
+
+## GROQ
+```python
+from ai4free import GROQ
+
+# Replace 'YOUR_API_KEY' with your GROQ API key
+groq = GROQ(api_key='YOUR_API_KEY')
+
+while True:
+    prompt = input("You: ")
+    response = groq.chat(prompt)
+    print(f"GROQ: {response}")
+```
 
 ## Available Providers
 - **Cohere:** Provides access to various text generation models including "command-r-plus" with capabilities like summarization, copywriting, and dialogue.
