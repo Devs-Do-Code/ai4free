@@ -69,7 +69,7 @@ while True:
 ```
 
 ## Perplexity
-```
+```python
 from ai4free import PERPLEXITY
 
 perplexity = PERPLEXITY()
