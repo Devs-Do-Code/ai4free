@@ -68,6 +68,17 @@ while True:
     print(f"LEO: {response}")
 ```
 
+## Perplexity
+```
+from ai4free import PERPLEXITY
+
+perplexity = PERPLEXITY()
+
+# Example usage:
+prompt = "Explain the concept of recursion in simple terms."
+response = perplexity.chat(prompt)
+print(response)
+```
 
 ## KoboldAI
 ```python
