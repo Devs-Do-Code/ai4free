@@ -5,12 +5,12 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="ai4free",
-    version="0.2", 
+    version="0.3", 
     description="collection of free AI provides",
     long_description=README,
     long_description_content_type="text/markdown",
     author="OEvortex",
-    maintainer="Sree",
+    author="Sree",
     author_email="helpingai5@gmail.com",
     packages=find_packages(),
     classifiers=[
