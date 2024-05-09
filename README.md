@@ -3,14 +3,14 @@
   <img src="https://img.shields.io/badge/Ai4Free-API-blue?style=for-the-badge&logo=huggingface" alt="HuggingChat API Badge">
   <h1>Free - Unofficial Reverse Engineered API 🚀</h1>
   <p>
-    <a href="https://github.com/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API/stargazers">
-      <img alt="GitHub stars" src="https://img.shields.io/github/stars/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API?style=social">
+    <a href="https://github.com/Devs-Do-Code/ai4free/stargazers">
+      <img alt="GitHub stars" src="https://img.shields.io/github/stars/Devs-Do-Code/ai4free?style=social">
     </a>
-    <a href="https://github.com/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API/network/members">
-      <img alt="GitHub forks" src="https://img.shields.io/github/forks/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API?style=social">
+    <a href="https://github.com/Devs-Do-Code/ai4free/network/members">
+      <img alt="GitHub forks" src="https://img.shields.io/github/forks/Devs-Do-Code/ai4free?style=social">
     </a>
-    <a href="https://github.com/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API/issues">
-      <img alt="GitHub issues" src="https://img.shields.io/github/issues/SreejanPersonal/Hugging-Chat-Reverse-Engineered-API?style=social">
+    <a href="https://github.com/Devs-Do-Code/ai4free/issues">
+      <img alt="GitHub issues" src="https://img.shields.io/github/issues/Devs-Do-Code/ai4free?style=social">
     </a>
   </p>
 </div>
