@@ -5,11 +5,12 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="ai4free",
-    version="0.1", 
+    version="0.2", 
     description="collection of free AI provides",
     long_description=README,
     long_description_content_type="text/markdown",
     author="OEvortex",
+    maintainer="Sree",
     author_email="helpingai5@gmail.com",
     packages=find_packages(),
     classifiers=[
@@ -31,12 +32,11 @@ setup(
         "tls_client",
         "webscout",
     ],
-
     license='HelpingAI Simplified Universal License',
     project_urls={
-        'Documentation': 'https://github.com/OE-LUCIFER/Webscout/wiki',
-        'Source': 'https://github.com/OE-LUCIFER/Webscout',
-        'Tracker': 'https://github.com/OE-LUCIFER/Webscout/issues',
+        'Source': 'https://github.com/Devs-Do-Code/ai4free',
+        'Tracker': 'https://github.com/Devs-Do-Code/ai4free/issues',
         'YouTube': 'https://youtube.com/@OEvortex',
+        'Youtube': 'https://www.youtube.com/@DevsDoCode'
     },
 )
