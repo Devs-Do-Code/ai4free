@@ -60,7 +60,7 @@ AI4Free is a Python library that provides convenient access to a variety of larg
 
 ## Installation
 ```bash
-pip install ai4free
+pip install -U ai4free
 ```
 **Use code with caution.**
 
