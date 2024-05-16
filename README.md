@@ -24,11 +24,26 @@
   <a href="https://buymeacoffee.com/devsdocode"><img alt="Buy Me A Coffee" src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 </div>
 
+<!-- <p align="center"> -->
+  <!-- <a href="https://memgpt.ai"><img src="https://github.com/cpacker/MemGPT/assets/5475622/80f2f418-ef92-4f7a-acab-5d642faa4991" alt="MemGPT logo"></a> -->
+<!-- </p> -->
+
+<div align="center">
+
+ <!-- <strong>MemGPT allows you to build LLM agents with long term memory & custom tools</strong> -->
+
+[![Discord](https://img.shields.io/discord/1161736243340640419?label=Discord&logo=discord&logoColor=5865F2&style=flat-square&color=5865F2)](https://discord.gg/ehwfVtsAts)
+[![Twitter Follow](https://img.shields.io/badge/follow-%40anand_sreejan-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://twitter.com/anand_sreejan)
+<!-- [![arxiv 2310.08560](https://img.shields.io/badge/arXiv-2310.08560-B31B1B?logo=arxiv&style=flat-square)](https://arxiv.org/abs/2310.08560)
+[![Documentation](https://img.shields.io/github/v/release/cpacker/MemGPT?label=Documentation&logo=readthedocs&style=flat-square)](https://memgpt.readme.io/docs) -->
+
+</div>
+
 # AI4Free: A Python Library for Free Access to All Available Large Language Models
 
 AI4Free is a Python library that provides convenient access to a variety of large language models (LLMs) from different providers, all without requiring any API keys or fees. This allows developers and researchers to experiment with various LLMs and explore their capabilities without the barrier of cost.
 
-## Crafted with ❤️ by Devs Do Code (Sree) and OEvortex
+## Crafted with ❤️ by Devs Do Code (Sree)
 
 > **Disclaimer:** This project is not officially associated with Any Offical APIs. It is an independent reverse engineering effort to explore the All Available APIs.
 
@@ -68,17 +83,6 @@ while True:
     print(f"LEO: {response}")
 ```
 
-## Perplexity
-```python
-from ai4free import PERPLEXITY
-
-perplexity = PERPLEXITY()
-
-# Example usage:
-prompt = "Explain the concept of recursion in simple terms."
-response = perplexity.chat(prompt)
-print(response)
-```
 
 ## KoboldAI
 ```python
@@ -122,6 +126,18 @@ while True:
     # Use the 'chat' method to send the prompt and receive a response
     r = ai.chat(prompt)
     print(r)
+```
+
+### ThinkAnyAI
+```python
+from ai4free import ThinkAnyAI
+
+opengpt = ThinkAnyAI()
+
+while True:
+    prompt = input("Enter your prompt: ")
+    response_str = opengpt.chat(prompt)
+    print(response_str)
 ```
 
 
@@ -234,6 +250,7 @@ while True:
 - **Phind:** Offers access to advanced LLMs with research and demo capabilities for tasks like text generation, code generation, and question answering.
 - **Yep:** Provides access to models like "Mixtral-8x7B-Instruct-v0.1" with capabilities for text generation, translation, and question answering.
 - **YouChat:** Offers free-tier access to a powerful LLM with abilities for dialogue, text generation, and question answering.
+- **ThinkAnyAI:** Offers access to various LLM models like "claude-3-haiku", "llama-3-8b-instruct", "mistral-7b-instruct", "rwkv-v6", "gemini-pro", and "gpt-3.5-turbo" for tasks like text generation, question answering, and creative writing.
 
 ## Conclusion
 AI4Free opens up exciting possibilities for exploring and utilizing the power of large language models without any cost. With its easy-to-use interface and support for diverse LLM providers, the library provides a valuable tool for developers, researchers, and anyone interested in exploring the cutting-edge of AI language technology.
@@ -246,4 +263,18 @@ AI4Free opens up exciting possibilities for exploring and utilizing the power of
   <a href="https://www.instagram.com/sree.shades_/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/developer-sreejan/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://buymeacoffee.com/devsdocode"><img alt="Buy Me A Coffee" src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+</div>
+<!-- <p align="center"> -->
+  <!-- <a href="https://memgpt.ai"><img src="https://github.com/cpacker/MemGPT/assets/5475622/80f2f418-ef92-4f7a-acab-5d642faa4991" alt="MemGPT logo"></a> -->
+<!-- </p> -->
+
+<div align="center">
+
+ <!-- <strong>MemGPT allows you to build LLM agents with long term memory & custom tools</strong> -->
+
+[![Discord](https://img.shields.io/discord/1161736243340640419?label=Discord&logo=discord&logoColor=5865F2&style=flat-square&color=5865F2)](https://discord.gg/ehwfVtsAts)
+[![Twitter Follow](https://img.shields.io/badge/follow-%40anand_sreejan-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://twitter.com/anand_sreejan)
+<!-- [![arxiv 2310.08560](https://img.shields.io/badge/arXiv-2310.08560-B31B1B?logo=arxiv&style=flat-square)](https://arxiv.org/abs/2310.08560)
+[![Documentation](https://img.shields.io/github/v/release/cpacker/MemGPT?label=Documentation&logo=readthedocs&style=flat-square)](https://memgpt.readme.io/docs) -->
+
 </div>
