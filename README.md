@@ -221,7 +221,62 @@ while True:
     response = groq.chat(prompt)
     print(f"GROQ: {response}")
 ```
+## VLM
+```python
+from ai4free import VLM
 
+
+# Initialize the VLM class
+vlm = VLM(model="llava-hf/llava-1.5-7b-hf", system_prompt="You are a helpful and informative AI assistant.")
+
+# Path to the image and the user message
+image_path = r"C:\Users\hp\Desktop\ai4free\WhatsApp Image 2024-05-19 at 19.01.01_47251a0f.jpg"
+user_message = "What is shown in this image?"
+
+# Encode the image to base64
+image_base64 = vlm.encode_image_to_base64(image_path)
+
+# Define the prompt with both image and text
+prompt = {
+    "role": "user",
+    "content": [
+        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"}},
+        {"type": "text", "text": user_message}
+    ]
+}
+
+# Get the response
+response = vlm.ask(prompt)
+
+# Extract and print the message from the response
+message = vlm.get_message(response)
+print(message)
+```
+## Deepinfra
+```
+from ai4free import DeepInfra
+
+ai = DeepInfra(
+    model="meta-llama/Meta-Llama-3-70B-Instruct", # DeepInfra models
+    is_conversation=True,
+    max_tokens=800,
+    timeout=30,
+    intro=None,
+    filepath=None,
+    update_file=True,
+    proxies={},
+    history_offset=10250,
+    act=None,
+)
+
+prompt = "what is meaning of life"
+
+response = ai.ask(prompt)
+
+# Extract and print the message from the response
+message = ai.get_message(response)
+print(message)
+```
 ## Available Providers
 - **Cohere:** Provides access to various text generation models including "command-r-plus" with capabilities like summarization, copywriting, and dialogue.
 - **REKA:** Offers several LLM models like "reka-core", "reka-flash", and "reka-edge" for tasks such as question answering, text generation, and summarization.

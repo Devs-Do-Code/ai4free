@@ -12,4 +12,6 @@ from .you import *
 from .perplexity import *
 from .ThinkAnyAI import *
 from .Berlin4h import *
-from .ChatGPTUK import *                                      
+from .ChatGPTUK import *
+from .BasedGPT import * 
+from .Deepinfra import *                                
